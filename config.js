@@ -1,11 +1,13 @@
 /*
  * ✨ EDIT ONLY THIS FILE to personalize the experience.
- * Photos can be local paths such as assets/photo1.jpg or any image URL.
+ * Replace photo URLs with assets/photo1.jpg etc. when you add your own images.
  */
 const BIRTHDAY_CONFIG = {
   name: "Your Name",
   message: `Happy Birthday! ❤️\nI hope today gives you all the little reasons to smile, laugh until your cheeks hurt, and make memories you'll want to keep forever.\n\nThank you for being wonderfully you. May this next chapter bring you exciting adventures, peaceful moments, ridiculous laughter, and people who always remind you how special you are.\n\nNow go enjoy your day. You absolutely deserve it! 🎂✨`,
   music: "assets/birthday-music.mp3",
+  typingSpeed: 24,
+  confettiColors: ["#ff6b9a", "#ffc98e", "#a78bfa", "#ffffff", "#75e6c2"],
   memories: [
     { image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85", caption: "The chaos begins 😂", date: "One unforgettable day" },
     { image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=85", caption: "How did we even end up here?", date: "A very good memory" },
