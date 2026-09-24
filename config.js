@@ -5,7 +5,20 @@ window.BIRTHDAY_CONFIG = {
   music: "assets/birthday-music.mp3",
   typingSpeed: 24,
   confettiColors: ["#ff6b9a", "#ffc98e", "#a78bfa", "#ffffff", "#75e6c2"],
-  memories: [],
+
+  // WALL 1 — HER PHOTOS
+  // Replace these image paths with the photos you want in her personal frame wall.
+  memories: [
+    { image: "assets/her-1.jpg", caption: "A moment worth remembering ❤️", date: "Her moments" },
+    { image: "assets/her-2.jpg", caption: "That smile though ✨", date: "Her moments" },
+    { image: "assets/her-3.jpg", caption: "One of those beautiful days 🌸", date: "Her moments" },
+    { image: "assets/her-4.jpg", caption: "Certified good memory 💫", date: "Her moments" }
+  ],
+
+  // WALL 2 — OUR GANG MEMORIES
+  // Add gang photos here later using the same format.
+  gangMemories: [],
+
   missionQuiz: [
     { q: "What's today's occasion?", options: ["Friday 😐", "Random day 🤨", "Treat day 🍰"], correct: 2, wrong: "Hmm... Friday? Nice try 😂 But this is definitely a treat day!" },
     { q: "What should you receive today?", options: ["Homework 📚", "More homework 😭", "Gifts 🎁"], correct: 2, wrong: "WHO VOTED FOR HOMEWORK?! 😂" },
