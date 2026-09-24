@@ -60,3 +60,36 @@ function sparkBurst(x,y,count=15){for(let i=0;i<count;i++){const s=document.crea
 function confetti(count=100){for(let i=0;i<count;i++){const c=document.createElement('i');c.className='confetti-piece';c.style.left=Math.random()*100+'vw';c.style.animationDuration=(2.4+Math.random()*2.8)+'s';c.style.animationDelay=(Math.random()*.5)+'s';c.style.setProperty('--dx',(Math.random()*360-180)+'px');c.style.transform=`rotate(${Math.random()*360}deg)`;c.style.background=cfg.confettiColors?.[i%cfg.confettiColors.length]||['#ff6b9a','#ffc98e','#a78bfa','#fff','#75e6c2'][i%5];document.getElementById('confetti').appendChild(c);setTimeout(()=>c.remove(),6000)}}
 function celebrationBurst(){confetti(140);sparkBurst(innerWidth/2,innerHeight*.42,60);for(let i=0;i<8;i++)setTimeout(()=>confetti(35),i*300)}
 document.getElementById('restartBtn').addEventListener('click',()=>location.reload());
+
+// SECRET CURIOSITY GAME — deliberately simple to edit and replay.
+const mysteryBoxes=[...document.querySelectorAll('.mystery-box')];
+const gameHint=document.getElementById('gameHint'),gameResult=document.getElementById('gameResult'),unlockGame=document.getElementById('unlockGame');
+let clueFound=false,wrongChoices=0;
+const clueIndex=1;
+if(mysteryBoxes.length){
+  mysteryBoxes.forEach((box,index)=>box.addEventListener('click',()=>{
+    if(clueFound||box.classList.contains('locked')||box.classList.contains('opened'))return;
+    box.classList.add('opened');
+    sparkBurst(box.getBoundingClientRect().left+box.offsetWidth/2,box.getBoundingClientRect().top+box.offsetHeight/2,18);
+    if(index===clueIndex){
+      clueFound=true;
+      box.querySelector('span').textContent='🔑';
+      box.querySelector('small').textContent='YOU FOUND IT!';
+      gameHint.textContent='Wait... this is only a clue. The real surprise is still hidden. 👀';
+      gameResult.innerHTML='<strong>🔓 CLUE UNLOCKED</strong><span>"The next room contains something you definitely did not expect..."</span>';
+      gameResult.classList.remove('hidden');
+      unlockGame.classList.remove('hidden');
+      confetti(35);
+    }else{
+      wrongChoices++;
+      box.querySelector('span').textContent='😈';
+      box.querySelector('small').textContent='NOT THIS ONE';
+      gameHint.textContent=wrongChoices===1?'Nope 😂 But now one mystery is eliminated...':'So close! One box is still hiding something. 👀';
+      gameResult.innerHTML='<strong>Interesting...</strong><span>That box was empty. But you are getting closer.</span>';
+      gameResult.classList.remove('hidden');
+      box.classList.add('locked');
+      sparkBurst(innerWidth/2,innerHeight/2,8);
+    }
+  }));
+  unlockGame.addEventListener('click',()=>{toast('Okay... you unlocked the next level. 😈');confetti(55);setTimeout(()=>goTo(7),850)});
+}
