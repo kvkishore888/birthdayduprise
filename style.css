@@ -12,3 +12,8 @@
 .gang-wall .memory-card .photo-frame img{width:100%;height:100%;object-fit:contain;object-position:center;background:#17111d}
 @media(max-width:850px){.gang-wall .memory-card .photo-frame{height:300px}}
 @media(max-width:560px){.gang-wall .memory-card .photo-frame{height:330px}.gang-wall .memory-card img{height:100%;object-fit:contain}}
+
+/* Keep the birthday letter fully reachable on smaller screens. */
+.reveal-screen{overflow-y:auto;overflow-x:hidden;align-items:start;padding:24px 18px 60px}
+.reveal-inner{margin:auto;padding:10px 0 20px}
+@media(max-height:760px){.reveal-screen{padding-top:18px}.reveal-inner{padding-top:0}.big-cake{font-size:clamp(3.2rem,8vw,5rem)}.reveal-inner h1{font-size:clamp(2.5rem,7vw,5rem)}.reveal-inner h2{font-size:clamp(1.7rem,4vw,3rem)}.letter{margin-top:14px;margin-bottom:18px}}
