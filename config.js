@@ -1,6 +1,6 @@
 /* ✨ Edit this file to personalize the birthday adventure. */
 window.BIRTHDAY_CONFIG = {
-  name: "Your Name",
+  name: "Thara",
   message: `Happy Birthday! ❤️\nI hope today gives you all the little reasons to smile, laugh until your cheeks hurt, and make memories you'll want to keep forever.\n\nThank you for being wonderfully you. May this next chapter bring you exciting adventures, peaceful moments, ridiculous laughter, and people who always remind you how special you are.\n\nNow go enjoy your day. You absolutely deserve it! 🎂✨`,
   music: "assets/birthday-music.mp3",
   typingSpeed: 24,
