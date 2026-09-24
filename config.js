@@ -7,12 +7,10 @@ window.BIRTHDAY_CONFIG = {
   confettiColors: ["#ff6b9a", "#ffc98e", "#a78bfa", "#ffffff", "#75e6c2"],
 
   // WALL 1 — HER PHOTOS
-  // Replace these image paths with the photos you want in her personal frame wall.
   memories: [
-    { image: "assets/her-1.jpg", caption: "A moment worth remembering ❤️", date: "Her moments" },
-    { image: "assets/her-2.jpg", caption: "That smile though ✨", date: "Her moments" },
-    { image: "assets/her-3.jpg", caption: "One of those beautiful days 🌸", date: "Her moments" },
-    { image: "assets/her-4.jpg", caption: "Certified good memory 💫", date: "Her moments" }
+    { image: "assets/her-1.svg", caption: "That smile though ✨", date: "Her moments" },
+    { image: "assets/her-2.svg", caption: "One of those beautiful days 🌸", date: "Her moments" },
+    { image: "assets/her-3.svg", caption: "A moment worth remembering ❤️", date: "Her moments" }
   ],
 
   // WALL 2 — OUR GANG MEMORIES
