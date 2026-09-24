@@ -1,0 +1,12 @@
+{
+  "name": "birthdayduprise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive birthday surprise adventure",
+  "scripts": {
+    "start": "serve . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
