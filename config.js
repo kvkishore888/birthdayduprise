@@ -33,7 +33,7 @@ window.BIRTHDAY_CONFIG = {
   ],
   selfQuiz: [
     { q: "What are you most likely to say?", options: ["I'm hungry.", "I'm tired.", "Let's go somewhere.", "All of the above 😂"], correct: 3 },
-    { q: "What's your hidden superpower?", options: ["Sleeping", "Overthinking", "Making everyone laugh", "Being late"], correct: 2 },
+    { q: "What's your hidden superpower?", options: ["Sleeping", "Overthinking", "Making everyone laugh", "Being late"], correct: 0 },
     { q: "Your birthday survival strategy?", options: ["Cake first", "Photos later", "Enjoy everything", "All of the above 🎂"], correct: 3 }
   ]
 };
