@@ -2,7 +2,7 @@
  * ✨ EDIT ONLY THIS FILE to personalize the experience.
  * Replace photo URLs with assets/photo1.jpg etc. when you add your own images.
  */
-const BIRTHDAY_CONFIG = {
+window.BIRTHDAY_CONFIG = {
   name: "Your Name",
   message: `Happy Birthday! ❤️\nI hope today gives you all the little reasons to smile, laugh until your cheeks hurt, and make memories you'll want to keep forever.\n\nThank you for being wonderfully you. May this next chapter bring you exciting adventures, peaceful moments, ridiculous laughter, and people who always remind you how special you are.\n\nNow go enjoy your day. You absolutely deserve it! 🎂✨`,
   music: "assets/birthday-music.mp3",
@@ -15,9 +15,9 @@ const BIRTHDAY_CONFIG = {
     { image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85", caption: "Certified good memory ❤️", date: "Definitely worth remembering" }
   ],
   missionQuiz: [
-    { q: "What's today's occasion?", options: ["Monday", "My Birthday 🎂", "A random Tuesday"], correct: 1 },
-    { q: "What should you receive today?", options: ["Homework 📚", "More homework 😭", "Gifts 🎁"], correct: 2 },
-    { q: "Who deserves an amazing day today?", options: ["Me 😎", "Obviously me 😌", "ME!!! 🎉"], correct: 2 }
+    { q: "What's today's occasion?", options: ["Monday 😐", "My Birthday 🎂", "A random Tuesday 🤨"], correct: 1, wrong: "Nice try 😂 You almost escaped your own birthday!" },
+    { q: "What should you receive today?", options: ["Homework 📚", "More homework 😭", "Gifts 🎁"], correct: 2, wrong: "WHO VOTED FOR HOMEWORK?! 😂" },
+    { q: "Who deserves an amazing day today?", options: ["Me 😎", "Obviously me 😌", "ME!!! 🎉"], correct: 2, wrong: "There is only one acceptable answer here. 😌" }
   ],
   selfQuiz: [
     { q: "What are you most likely to say?", options: ["I'm hungry.", "I'm tired.", "Let's go somewhere.", "All of the above 😂"], correct: 3 },
