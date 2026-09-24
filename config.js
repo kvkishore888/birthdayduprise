@@ -8,13 +8,14 @@ window.BIRTHDAY_CONFIG = {
 
   // WALL 1 — HER PHOTOS
   memories: [
-    { image: "assets/her-1.svg", caption: "That smile though ✨", date: "Her moments" },
-    { image: "assets/her-2.svg", caption: "One of those beautiful days 🌸", date: "Her moments" },
-    { image: "assets/her-3.svg", caption: "A moment worth remembering ❤️", date: "Her moments" }
+    { image: "assets/her-photo-1.jpg", caption: "That smile though ✨", date: "Her moment" },
+    { image: "assets/her-photo-2.jpg", caption: "One of those beautiful days 🌸", date: "Her moment" },
+    { image: "assets/her-photo-3.jpg", caption: "A moment worth remembering ❤️", date: "Her moment" },
+    { image: "assets/her-photo-4.jpg", caption: "Certified good memory ✨", date: "Her moment" }
   ],
 
   // WALL 2 — OUR GANG MEMORIES
-  // Add gang photos here later using the same format.
+  // Add your gang photos here later using the same format.
   gangMemories: [],
 
   missionQuiz: [
