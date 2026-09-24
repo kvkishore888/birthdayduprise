@@ -8,10 +8,12 @@ window.BIRTHDAY_CONFIG = {
 
   // WALL 1 — HER PHOTOS
   memories: [
-    { image: "assets/her-photo-1.jpg", caption: "That smile though ✨", date: "Her moment" },
-    { image: "assets/her-photo-2.jpg", caption: "One of those beautiful days 🌸", date: "Her moment" },
-    { image: "assets/her-photo-3.jpg", caption: "A moment worth remembering ❤️", date: "Her moment" },
-    { image: "assets/her-photo-4.jpg", caption: "Certified good memory ✨", date: "Her moment" }
+    { image: "assets/WhatsApp Image 202 6-09-24 at 7.32.52 PM.jpeg", caption: "That smile though ✨", date: "Her moment" },
+    { image: "assets/WhatsApp Image 2026 -09-24 at 7.32.51 PM.jpeg", caption: "One of those beautiful days 🌸", date: "Her moment" },
+    { image: "assets/WhatsApp Image 2026-09-24 at 7.32.48 PM.jpeg", caption: "A moment worth remembering ❤️", date: "Her moment" },
+    { image: "assets/WhatsApp Image 2026-09-24 at 7.32.50 PM.jpeg", caption: "Certified good memory ✨", date: "Her moment" },
+    { image: "assets/WhatsApp Image 2026-09-24 at 7.32.51 PM.jpeg", caption: "Another beautiful memory 💕", date: "Her moment" },
+    { image: "assets/WhatsApp Image 202 6-09-24 at 7.32.52 PM.jpeg", caption: "A memory to keep forever ✨", date: "Her moment" }
   ],
 
   // WALL 2 — OUR GANG MEMORIES
