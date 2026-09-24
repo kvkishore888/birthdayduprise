@@ -18,7 +18,13 @@ window.BIRTHDAY_CONFIG = {
 
   // WALL 2 — OUR GANG MEMORIES
   // Add your gang photos here later using the same format.
-  gangMemories: [],
+  gangMemories: [
+    { image: "assets/1000101572.jpg.jpeg", caption: "The gang together ❤️", date: "Our memory" },
+    { image: "assets/1000101573.jpg.jpeg", caption: "Chaos with the best people 😂", date: "Our memory" },
+    { image: "assets/1000101574.jpg.jpeg", caption: "Another memory to keep forever ✨", date: "Our memory" },
+    { image: "assets/WhatsApp Image 2026-09-24 at 7.36.47 PM.jpeg", caption: "Good times together 💕", date: "Our memory" },
+    { image: "assets/WhatsApp Image 2026-09-24 at 7.36.49 PM.jpeg", caption: "One for the memories ✨", date: "Our memory" }
+  ],
 
   missionQuiz: [
     { q: "What's today's occasion?", options: ["Friday 😐", "Random day 🤨", "Treat day 🍰"], correct: 2, wrong: "Hmm... Friday? Nice try 😂 But this is definitely a treat day!" },
